@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Poppins", system-ui;
+
+  background-color: #f1f0f1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+
+.attribution {
+  font-size: 11px;
+  bottom: 15px;
+  width: 100%;
+  position: absolute;
+
+  text-align: center;
+
+  /* padding-bottom: 20px; */
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  /* padding: 16px; */
+  background-color: white;
+  margin: 1.2em;
+
+  border-radius: 32px;
+  border-bottom-right-radius: 25%;
+}
+
+
+.break-line {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+
+.break-line img {
+  background-color: #864dfe;
+  border-radius: 50%;
+  padding: 8px;
+
+}
+
+.break-line img:hover{
+  background-color: black;
+}
+
+
+.break-line>hr {
+  border-top-width: 0px;
+  border-top-style: solid;
+  border-left-width: 0px;
+  border-left-style: solid;
+  border-right-width: 0px;
+  border-right-style: solid;
+
+  width: 100%;
+  color: #ededed
+}
+
+
+/*----------------------------------------------------*/
+
+.form-box form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+
+
+}
+
+.date_group {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 5px;
+}
+
+.date_group label {
+  padding-left: 15px;
+  font-weight: 600;
+  color: #6a6b6b;
+}
+
+.date_group input {
+  width: 60%;
+  font-size: 1.3em;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+
+  font-family: "Poppins", system-ui;
+
+  font-weight: 700;
+
+  align-self: center;
+}
+
+/*----------------------------------------------------*/
+
+.output_date {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+
+
+  padding: 32px;
+  padding-top: 0px;
+}
+
+.output_date .date {
+  padding: 0;
+  margin: 0px;
+
+  font-size: 2.9em;
+  font-weight: 800;
+}
+
+.output_date .date span {
+  color: #864dfe;
+}
+
+/*----------------------------------------------------*/
+
+
+.date_group .error {
+  color: #bf7c73;
+  font-size: 0.8em;
+  text-align: center;
+  display: none;
+}
+
+#date_error {
+  margin: 0;
+  margin-left: 2.5em;
+  color: #bf7c73;
+  font-size: 0.8em;
+  display: none;
+}
+
+
+/*--------------------------------------------------*/
+
+/*RESPONSIVE*/
+
+@media only screen and (min-width: 1024px) {
+  .container{
+    max-width: 600px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .break-line img{
+   order: 3;
+
+  }
+
+}

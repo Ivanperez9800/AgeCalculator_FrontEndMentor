@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="form-box ">
+      <form>
+
+        <div class="date_group">
+          <label for="day">Day</label>
+          <input type="text" id="day" placeholder="DD">
+          <span class="error" ></span>
+        </div>
+
+        <div class="date_group">
+          <label for="month">Month</label>
+          <input type="text" id="month" placeholder="MM">
+          <span class="error" ></span>
+        </div>
+
+        <div class="date_group">
+          <label for="yesr">Year</label>
+          <input type="text" id="year" placeholder="YYYY">
+          <span class="error" ></span>
+        </div>
+      </form>
+      <p id="date_error"></p>
+    </div>
+
+    <div class="break-line">
+      <hr>
+      <img src="./images/icon-arrow.svg" alt="">
+      <hr>
+    </div>
+
+    <div class="output_date">
+      <p class="date"> <span class="output_year" >--</span> years</p>
+      <p class="date"> <span class="output_month" >--</span> months</p>
+      <p class="date"> <span  class="output_day">--</span> days</p>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
+  <!-- Moment Timezone -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.min.js"></script>
+  
+  
+  <script src="./main.js"></script>
+</body>
+
+</html>
